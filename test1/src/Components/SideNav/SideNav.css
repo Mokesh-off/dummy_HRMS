@@ -1,11 +1,12 @@
 .sidenav {
-  width: 10vw;
+  width: 15vw;
   position: fixed;
   background: #61e661;
   overflow-x: hidden;
-  padding:0;
+  padding: 0;
   height: 85vh;
   margin-top: 80px;
+
 }
 
 .sidenav a {
@@ -20,7 +21,18 @@
   color: #064579;
   background-color: yellow;
 }
-button{
+
+button {
+  padding: 15px;
+  width: 10vw;
+  margin-left: 2vw;
+  margin-top: 1vw;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+}
+
+/* button{
   padding:15px;
   width: 8vw;
   margin-left: 1vw;
@@ -28,7 +40,7 @@ button{
   border-radius: 20px;
   border: none;
   outline: none;
-}
+} */
 button:hover{
   background-color: #d2eed2;
 }

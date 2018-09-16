@@ -17,71 +17,68 @@ class Content extends Component {
     return (
       <div className='bodyContent'>
         <div className='sidenav'>
-          <button onClick={() => this.setNewNumber('about')}>About</button>
-          <button onClick={() => this.setNewNumber('services')}>Services</button>
-          <button onClick={() => this.setNewNumber('client')}>Client</button>
-          <button onClick={() => this.setNewNumber('contacts')}>Contacts</button>
+          <button onClick={() => this.setNewNumber('Leave_Request')}>Leave Request</button>
+          <button onClick={() => this.setNewNumber('Request_Status')}>Request Status</button>
+          <button onClick={() => this.setNewNumber('Leave_Approval')}>Leave Approval</button>
+          <button onClick={() => this.setNewNumber('My_Leave')}>My Leave</button>
+          <button onClick={() => this.setNewNumber('Leave_Records')}>Leave Records</button>
+          <button onClick={() => this.setNewNumber('Leave_Policy')}>Leave Policy</button>
+          <button onClick={() => this.setNewNumber('Configure_Holiday')}>Leave plan</button>
+
         </div>
 
         {this.state.data === 0
           ? <div id='mainContainer'>
-            <div className='columnDiv'>
-              <div className='left'>
-                <img src={require('../../Assets/images/question1.png')} />
-              </div>
-              <div className='right'>
-                <p>Description of first image</p>
-              </div>
-            </div>
-
-            <div className='columnDiv'>
-              <div className='left'><p>Description of second image</p></div>
-              <div className='right'><img src={require('../../Assets/images/question2.png')} /></div>
-            </div>
-
-            <div className='columnDiv'>
-              <div className='left'><img src={require('../../Assets/images/question3.png')} /></div>
-              <div className='right'><p>Description of third image</p></div>
-            </div>
-
-            <div className='columnDiv'>
-              <div className='left'><p>Description of fourth image</p></div>
-              <div className='right'><img src={require('../../Assets/images/question4.png')} /></div>
-            </div>
-
-            <div className='columnDiv'>
-              <div className='left'><img src={require('../../Assets/images/question5.png')} /></div>
-              <div className='right'><p>Description of fifth image</p></div>
-            </div>
-
-            <div className='columnDiv'>
-  <div className='left'><p>Description of six image</p></div>
-  <div className='right'><img src={require('../../Assets/images/question6.png')} /></div>
-            </div>
+            <h1>Mokesh</h1>
           </div>
-			:		this.state.data == 'about'
+			:		this.state.data === 'Leave_Request'
 				  ? <div id='mainContainer'>
   <div className='columnDiv'>
-  <h1>About us</h1>
+  <h1>Leave_Request</h1>
 		 		    </div>
 		 		  </div>
-			:			this.state.data == 'services' ?
+			:			this.state.data == 'Request_Status' ?
               <div id='mainContainer'>
   <div className='columnDiv'>
-  <h1>services</h1>
+  <h1>Request_Status</h1>
 				 </div>
 			 </div>
-			 :			 this.state.data == 'client' ?
+			 :			 this.state.data == 'Leave_Approval' ?
   <div id='mainContainer'>
                   <div className='columnDiv'>
-                    <h1>Clients</h1>
+                    <h1>Leave_Approval</h1>
                   </div>
                 </div>
-				:				<div id='mainContainer'>
-  <div className='columnDiv'>
-  <h1>Contacts</h1>
-					 </div>
-				 </div>
+			 :			 this.state.data == 'My_Leave' ?
+       <div id='mainContainer'>
+                       <div className='columnDiv'>
+                         <h1>My_Leave</h1>
+                       </div>
+                     </div>
+			 :			 this.state.data == 'Leave_Records' ?
+       <div id='mainContainer'>
+                       <div className='columnDiv'>
+                         <h1>Leave_Records</h1>
+                       </div>
+                     </div>
+			 :			 this.state.data == 'Leave_Policy' ?
+       <div id='mainContainer'>
+                       <div className='columnDiv'>
+                         <h1>Leave_Policy</h1>
+                       </div>
+                     </div>
+			 :			 this.state.data == 'Configure_Holiday' ?
+       <div id='mainContainer'>
+                       <div className='columnDiv'>
+                         <h1>Configure_Holiday</h1>
+                       </div>
+                     </div>
+			 :
+       <div id='mainContainer'>
+                       <div className='columnDiv'>
+                         <h1>Leave_Records</h1>
+                       </div>
+                     </div>
         }
       </div>
     )
