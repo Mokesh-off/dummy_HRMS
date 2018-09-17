@@ -1,7 +1,7 @@
 .sidenav {
   width: 15vw;
   position: fixed;
-  background: #61e661;
+  background: #afa4a4;
   overflow-x: hidden;
   padding: 0;
   height: 85vh;
@@ -42,5 +42,5 @@ button {
   outline: none;
 } */
 button:hover{
-  background-color: #d2eed2;
+  background-color: #ffe4c4;
 }
