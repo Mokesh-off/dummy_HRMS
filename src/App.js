@@ -7,7 +7,7 @@ import Footer from './Components/Footer/Footer.jsx';
 import Content from './Components/Content/Content.jsx';
 
 class App extends Component {
-//new comment
+
   // <Content myNumber = {this.state.data}></Content>
   
   render() {
