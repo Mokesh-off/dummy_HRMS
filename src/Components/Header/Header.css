@@ -1,0 +1,11 @@
+#header{
+    background: #ffe4c4;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 80px;
+}
+.headerText{
+    margin-top: 18px;
+}
