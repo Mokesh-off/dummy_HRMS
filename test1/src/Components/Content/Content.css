@@ -1,0 +1,29 @@
+#mainContainer{
+	display: flex;
+  flex-direction: column;
+  margin-top: 81px;
+  padding-left: 20vw;
+  width: 80vw;
+}
+    
+.columnDiv{
+  margin: auto;
+  display: flex;
+}
+.left{
+  width: 30vw;
+  background-color: #b22222;
+  border-bottom: 5px solid #131111;
+}
+.right{
+  width: 30vw;
+  background-color: #92767a;
+  border-bottom: 5px solid #131111;
+}
+img{
+  height:200px;
+  width:200px;
+}
+.bodyContent{
+  display: flex;
+}
