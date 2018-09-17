@@ -29,7 +29,9 @@ class Content extends Component {
 
         {this.state.data === 0
           ? <div id='mainContainer'>
-            <h1>Mokesh</h1>
+          <div className='columnDiv'>
+            <h1>Content</h1>
+            </div>
           </div>
 			:		this.state.data === 'Leave_Request'
 				  ? <div id='mainContainer'>
