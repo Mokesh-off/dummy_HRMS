@@ -5,7 +5,7 @@ import Header from './Components/Header/Header.jsx';
 import Footer from './Components/Footer/Footer.jsx';
 // import SideNav from './Components/SideNav/SideNav.jsx';
 import Content from './Components/Content/Content.jsx';
-
+// adding new comment
 class App extends Component {  
   render() {
     return (
