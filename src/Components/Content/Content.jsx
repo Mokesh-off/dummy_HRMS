@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import './Content.css'
 import '../SideNav/SideNav.css'
+import MyLeaveRecord from '../myLeaveRecord/myLeaveRecord'
 
 class Content extends Component {
   constructor (props) {
@@ -55,6 +56,9 @@ class Content extends Component {
        <div id='mainContainer'>
                        <div className='columnDiv'>
                          <h1>My_Leave</h1>
+                       </div>
+                       <div>
+                       <MyLeaveRecord />
                        </div>
                      </div>
 			 :			 this.state.data == 'Leave_Records' ?
