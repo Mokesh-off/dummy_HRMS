@@ -3,7 +3,7 @@ import './Content.css'
 import '../SideNav/SideNav.css'
 import MyLeaveRecord from '../myLeaveRecord/myLeaveRecord'
 import Profile from '../profile/Profile'
-
+import LeavePolicy from '../LeavePolicy/LeavePolicy'
 class Content extends Component {
   constructor (props) {
     super(props)
@@ -87,7 +87,7 @@ class Content extends Component {
 			 :			 this.state.data == 'Leave_Policy' ?
        <div id='mainContainer'>
                        <div className='columnDiv'>
-                         <h1>Leave_Policy</h1>
+                         <LeavePolicy/>
                        </div>
                      </div>
 			 :			 this.state.data == 'Configure_Holiday' ?
