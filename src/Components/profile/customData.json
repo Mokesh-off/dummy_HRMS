@@ -1,0 +1,19 @@
+{ "profileData" : [
+    {
+      "fullName" : "Tanya Sharma",
+      "designation" : "Finance Manager",
+      "employeeId" : "0045",
+      "birthday" : "30/08/1993",
+      "mobileNumber" : "+91-9765483291",
+      "emailId" : "tanyasharma2@gmail.com",
+      "address" : "34, Thana Street, Pursaiwalkam, Chennai",
+      "department" : "Finance",
+      "workLocation" : "Chennai",
+      "casualLeaves" : "5",
+      "seekLeaves" : "4",
+      "doj" : "05/08/2015"
+     }
+]
+}
+
+export default profileData

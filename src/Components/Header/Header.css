@@ -25,6 +25,6 @@
     cursor: pointer;
 }
 
-.profile:hover{
+ #header .profile:hover{
     color: white ;
 }
