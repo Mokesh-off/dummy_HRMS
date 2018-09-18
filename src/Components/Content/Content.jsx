@@ -28,7 +28,6 @@ class Content extends Component {
     return (
       <div className='bodyContent'>
         <div className='sidenav'>
-<<<<<<< Updated upstream
             <button onClick={() => this.setNewNumber('Profile')}>Profile</button>
           <div className={this.state.dropDown} onClick={() => this.dropDownEvent()}><button>Leave</button></div>
           <div className={'childoptions ' + this.state.childDropDown}>
@@ -40,16 +39,6 @@ class Content extends Component {
             <button onClick={() => this.setNewNumber('Leave_Policy')}>Leave Policy</button>
             <button onClick={() => this.setNewNumber('Configure_Holiday')}>Leave plan</button>
           </div>
-=======
-          <button onClick={() => this.setNewNumber('Leave_Request')}>Leave Request</button>
-          <button onClick={() => this.setNewNumber('Request_Status')}>Request Status</button>
-          <button onClick={() => this.setNewNumber('Leave_Approval')}>Leave Approval</button>
-          <button onClick={() => this.setNewNumber('My_Leave')}>My Leave</button>
-          <button onClick={() => this.setNewNumber('Leave_Records')}>Leave Records</button>
-          <button onClick={() => this.setNewNumber('Leave_Policy')}>Leave Policy</button>
-          <button onClick={() => this.setNewNumber('Configure_Holiday')}>Leave plan</button>
-          <button onClick={() => this.setNewNumber('Profile_Page')}>Profile</button>
->>>>>>> Stashed changes
 
         </div>
 
@@ -63,7 +52,7 @@ class Content extends Component {
 :			this.state.data == 'Profile' ?
     <div id='mainContainer'>
       <div className='columnDiv'>
-        <h1>Profile</h1>
+        <Profile />
       </div>
     </div>
 
@@ -107,12 +96,6 @@ class Content extends Component {
                          <h1>Configure_Holiday</h1>
                        </div>
                      </div>
-			  :   this.state.data == 'Profile_Page' ?
-        <div id='mainContainer'>
-                        <div className='columnDiv'>
-                          <Profile />
-                        </div>
-                      </div>
         :
         <div id='mainContainer'>
                         <div className='columnDiv'>
