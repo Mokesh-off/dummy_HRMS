@@ -1,22 +1,46 @@
 import React, { Component } from 'react'
 import './Content.css'
 import '../SideNav/SideNav.css'
+import MyLeaveRecord from '../myLeaveRecord/myLeaveRecord'
+import Profile from '../profile/Profile'
 
 class Content extends Component {
   constructor (props) {
     super(props)
     this.state = {
-      data: 0
+      data: 0,
+      parentdropDown : "parentoption",
+      childDropDown : "close"
     }
     this.setNewNumber = this.setNewNumber.bind(this)
+    this.dropDownEvent = this.dropDownEvent.bind(this)
   };
   setNewNumber (x) {
     this.setState({ data: this.state.data = x })
+  }
+  dropDownEvent(){
+  console.log(this.state);
+     this.setState({ parentdropDown : this.state.parentdropDown = (this.state.parentdropDown == "parentoption active")?"parentoption":"parentoption active"})
+     this.setState({ childDropDown : this.state.childDropDown = (this.state.childDropDown == "close")?"open":"close" })
+
   }
   render () {
     return (
       <div className='bodyContent'>
         <div className='sidenav'>
+<<<<<<< Updated upstream
+            <button onClick={() => this.setNewNumber('Profile')}>Profile</button>
+          <div className={this.state.dropDown} onClick={() => this.dropDownEvent()}><button>Leave</button></div>
+          <div className={'childoptions ' + this.state.childDropDown}>
+            <button onClick={() => this.setNewNumber('Leave_Request')}>Leave Request</button>
+            {/* <button onClick={() => this.setNewNumber('Request_Status')}>Request Status</button> */}
+            <button onClick={() => this.setNewNumber('Leave_Approval')}>Leave Approval</button>
+            <button onClick={() => this.setNewNumber('My_Leave')}>My Leave</button>
+            <button onClick={() => this.setNewNumber('Leave_Records')}>Leave Records</button>
+            <button onClick={() => this.setNewNumber('Leave_Policy')}>Leave Policy</button>
+            <button onClick={() => this.setNewNumber('Configure_Holiday')}>Leave plan</button>
+          </div>
+=======
           <button onClick={() => this.setNewNumber('Leave_Request')}>Leave Request</button>
           <button onClick={() => this.setNewNumber('Request_Status')}>Request Status</button>
           <button onClick={() => this.setNewNumber('Leave_Approval')}>Leave Approval</button>
@@ -24,25 +48,32 @@ class Content extends Component {
           <button onClick={() => this.setNewNumber('Leave_Records')}>Leave Records</button>
           <button onClick={() => this.setNewNumber('Leave_Policy')}>Leave Policy</button>
           <button onClick={() => this.setNewNumber('Configure_Holiday')}>Leave plan</button>
+          <button onClick={() => this.setNewNumber('Profile_Page')}>Profile</button>
+>>>>>>> Stashed changes
 
         </div>
 
         {this.state.data === 0
           ? <div id='mainContainer'>
-            <h1>Mokesh</h1>
+          <div className='columnDiv'>
+            <h1>Content</h1>
+            </div>
           </div>
+
+:			this.state.data == 'Profile' ?
+    <div id='mainContainer'>
+      <div className='columnDiv'>
+        <h1>Profile</h1>
+      </div>
+    </div>
+
 			:		this.state.data === 'Leave_Request'
 				  ? <div id='mainContainer'>
   <div className='columnDiv'>
   <h1>Leave_Request</h1>
 		 		    </div>
 		 		  </div>
-			:			this.state.data == 'Request_Status' ?
-              <div id='mainContainer'>
-  <div className='columnDiv'>
-  <h1>Request_Status</h1>
-				 </div>
-			 </div>
+       
 			 :			 this.state.data == 'Leave_Approval' ?
   <div id='mainContainer'>
                   <div className='columnDiv'>
@@ -53,6 +84,9 @@ class Content extends Component {
        <div id='mainContainer'>
                        <div className='columnDiv'>
                          <h1>My_Leave</h1>
+                       </div>
+                       <div>
+                       <MyLeaveRecord />
                        </div>
                      </div>
 			 :			 this.state.data == 'Leave_Records' ?
@@ -73,12 +107,18 @@ class Content extends Component {
                          <h1>Configure_Holiday</h1>
                        </div>
                      </div>
-			 :
-       <div id='mainContainer'>
-                       <div className='columnDiv'>
-                         <h1>Leave_Records</h1>
-                       </div>
-                     </div>
+			  :   this.state.data == 'Profile_Page' ?
+        <div id='mainContainer'>
+                        <div className='columnDiv'>
+                          <Profile />
+                        </div>
+                      </div>
+        :
+        <div id='mainContainer'>
+                        <div className='columnDiv'>
+                          <h1>Leave_Records</h1>
+                        </div>
+                      </div>
         }
       </div>
     )

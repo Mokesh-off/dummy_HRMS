@@ -1,8 +1,13 @@
 #footer{
-    background: #ffe4c4;
+    background: #f5f1ed;
+    /* background: #f5f1ed url('../../Assets/images/footer-back.jpg') no-repeat 0 0; */
+    /*src={require("../../Assets/images/question1.png")}*/
+    /*url('../src/Assets/images/footer-back.jpg') no-repeat 0 0;*/
     text-align: center;
     position: fixed;
         width: 100%;
         bottom: 0;
         height: 40px;
+        color: #39ce0d;
+        cursor: default;
 }

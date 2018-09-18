@@ -1,11 +1,11 @@
 .sidenav {
   width: 15vw;
   position: fixed;
-  background: #61e661;
+  background: #b9b7b7;
   overflow-x: hidden;
   padding: 0;
-  height: 85vh;
-  margin-top: 80px;
+  height: 88vh;
+  margin-top: 50px;
 
 }
 
@@ -23,14 +23,12 @@
 }
 
 button {
-  padding: 15px;
-  width: 10vw;
-  margin-left: 2vw;
-  margin-top: 1vw;
-  border-radius: 20px;
-  border: none;
-  outline: none;
-}
+    padding: 15px;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all 1s ease-in;
+  }
 
 /* button{
   padding:15px;
@@ -42,5 +40,5 @@ button {
   outline: none;
 } */
 button:hover{
-  background-color: #d2eed2;
+  background-color: #ffe4c4;
 }

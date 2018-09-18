@@ -1,0 +1,71 @@
+.profile {
+    margin: 20px;
+}
+.desc {
+    float: left;
+    display: flex;
+    margin-top: 100px;
+    flex-direction: column;
+    padding: 30px;
+}
+.desc img {
+    width: 130px;
+    height: 130px;
+    padding-bottom: 4px;
+    border-radius: 50%;
+}
+.desc label {
+    text-align: center;
+}
+.otherDetails{
+    margin-left: 18vw;
+    margin-top: 30px;
+    border-left: 2px solid; 
+    padding: 20px;
+    padding-left: 63px; 
+}
+.other {
+    display: flex;
+    flex-direction: column;
+}
+.other span {
+    margin: 2px;
+}
+.other input {
+    margin-left: 65px;
+    border: none;
+}
+#fullName { 
+    margin-left: 100px;
+}
+#eid {
+    margin-left: 85px;
+}
+#dob, #email {
+    margin-left: 115px;
+}
+#address {
+    margin-left: 110px;
+}
+#dept {
+    margin-left: 85px;
+}
+#work {
+    margin-left: 70px;
+}
+#mobile {
+    margin-left: 65px;
+}
+#doj {
+    margin-left: 60px;
+}
+.other label{
+    margin: 5px;
+}
+.leaves {
+    margin: 10px;
+    margin-left: 0px;
+}
+.leaves label {
+    margin: 5px;
+}
