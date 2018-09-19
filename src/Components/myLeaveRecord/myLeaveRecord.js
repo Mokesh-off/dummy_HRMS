@@ -1,26 +1,34 @@
 import React, {Component} from "react"
 import './MyLeaveRecord.css'
 
+import lists from './MyLeaveRecord.js'
 
-// import MyLeaveDetail from ""
+import Details from './Detail.js'
 
 class MyLeaveRecord extends Component {
  constructor(props){
 	 super(props);
 	 this.state={
-		 "employee":[
-			 {key:"1",type:"LOP",applyDate:"12-01-2018",applyTime:"15:01",state:"decline"},
-			 {key:"2",type:"CL",applyDate:"12-02-2018",applyTime:"15:02",state:"decline"},
-			 {key:"3",type:"EL",applyDate:"24-05-2018",applyTime:"20:01",state:"decline"},
-			 {key:"4",type:"LOP",applyDate:"12-07-2018",applyTime:"15:01",state:"decline"},
-			 {key:"5",type:"EL",applyDate:"10-08-2018",applyTime:"25:01",state:"decline"}
-		 ]
+		 "employee":lists,
+		 "detailStatus": false,
+		 resultValue:""
 	 }
-	 this.getData = this.getData.bind(this);
+	// this.getData = this.getData.bind(this);
  }
-	getData () {
-		// <MyLeavesDetail/>
+	getData (target,employee) {
+		//console.log(target);
+		this.setState({resultValue  : this.state.employee.find(value => value.id == target.id)});
+		
+		//console.log(this.props.resultValue);
+		this.setState({detailStatus : this.state.detailStatus = true});
 	}
+	getComponent() {
+		if (this.state.detailStatus) {  // show the modal if state showModal is true
+		  return <Details />;
+		} else {
+		  return null;
+		}
+	  }
 	
 	render() {
     return(
@@ -36,17 +44,20 @@ class MyLeaveRecord extends Component {
 					</thead>
 					<tbody>
 						{
-							this.state.employee.map((data,i) =>
-							<tr>
-							<td>{data.type}</td>
-							<td>{data.applyDate}</td>
-							<td>{data.applyTime}</td>
-							<td>{data.state}</td>
+							this.state.employee.map((employee) =>
+							<tr key={employee.id} onClick={this.getData.bind(this,employee)}>
+							<td>{employee.type}</td>
+							<td>{employee.applyDate}</td>
+							<td>{employee.applyTime}</td>
+							<td>{employee.state}</td>
 							</tr>
 						)
 						}
 					</tbody>
 				</table>
+				
+					<Details show={this.state.detailStatus == true}/>
+				
 			</div>
     );
   }
