@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 // import Login from '../Login.jsx'
 import MainContent from './Components/MainContent/MainContent.js'
-// import './Login.css'
+import './Login.css'
 class Login extends Component {
   constructor (props) {
     super(props)
@@ -71,8 +71,8 @@ class Login extends Component {
 
 
            <div>
-            <div class="body"></div>
-            <div class="header">
+            <div class="bodylogin"></div>
+            <div class="headerlogin">
               <div><span>tring</span>apps</div>
             </div>
             <br />
@@ -82,7 +82,7 @@ class Login extends Component {
                 <input type="password" placeholder="Password" data-test="password" value={this.state.password} onChange={this.handlePassChange} /><br />
                 <input type="submit" value="Login" data-test="submit"/>
                </form>
-               <p><a className="a" href="#">Forgot Username or Password?</a></p>
+               <p><a className="alogin" href="#">Forgot Username or Password?</a></p>
             </div>
           </div>  
 
