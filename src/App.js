@@ -7,12 +7,13 @@ import Footer from './Components/Footer/Footer.jsx';
 
 import Content from './Components/Content/Content.jsx';
 import Routes from './Routes/Routes';
+import Login from './Login.jsx'
 
 class App extends Component {  
   render() {
     return (
       <div id="outer">
-      <Routes />
+      <Login />
 
       </div>
     );
