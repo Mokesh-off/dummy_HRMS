@@ -5,6 +5,7 @@ import MyLeaveRecord from '../myLeaveRecord/myLeaveRecord'
 import Profile from '../profile/Profile'
 import LeavePolicy from '../LeavePolicy/LeavePolicy'
 import LeaveRequestForm from '../LeaveRequest/LeaveRequestForm'
+import Leaverecord from '../LeaveRecord/leaverecord';
 class Content extends Component {
   constructor (props) {
     super(props)
@@ -80,7 +81,7 @@ class Content extends Component {
 			 :			 this.state.data == 'Leave_Records' ?
        <div id='mainContainer'>
                        <div className='columnDiv'>
-                         <h1>Leave_Records</h1>
+                       <Leaverecord />
                        </div>
                      </div>
 			 :			 this.state.data == 'Leave_Policy' ?
