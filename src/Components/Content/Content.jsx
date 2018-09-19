@@ -43,6 +43,7 @@ class Content extends Component {
             <button onClick={() => this.setNewNumber('Leave_Policy')}>Leave Policy</button>
             <button onClick={() => this.setNewNumber('Configure_Holiday')}>Leave plan</button>
           </div>
+          
 
         </div>
 

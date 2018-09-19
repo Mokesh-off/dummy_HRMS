@@ -28,12 +28,17 @@ img{
   display: flex;
 }
 .close{
-  opacity: 0;
+  /* opacity: 0; */
+  height: 0;
+  /* -webkit-transition:height 4s; For Safari 3.1 to 6.0 */
+  /* transition: height 4s; */
+  
   overflow: hidden;
-   transition: all 1s ease-in;
+  /* transition: all 1s ease-in; */
 }
 .open{
-  opacity: 1;
-   transition: all 1s ease-in;
+  /* opacity: 1; */
+  height: 10vh;
+  /* transition: all 1s ease-in; */
  }
  
