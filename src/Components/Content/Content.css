@@ -27,3 +27,13 @@ img{
 .bodyContent{
   display: flex;
 }
+.close{
+  opacity: 0;
+  overflow: hidden;
+   transition: all 1s ease-in;
+}
+.open{
+  opacity: 1;
+   transition: all 1s ease-in;
+ }
+ 
