@@ -6,6 +6,8 @@ import Profile from '../profile/Profile'
 import LeavePolicy from '../LeavePolicy/LeavePolicy'
 import LeaveRequestForm from '../LeaveRequest/LeaveRequestForm'
 import Leaverecord from '../LeaveRecord/leaverecord';
+import Dash from '../Dashboard/Dashboard.jsx'
+// /home/tringapps/Desktop/reactApp/HRMS/src/Components/Dahboard/Dashboard.jsx
 class Content extends Component {
   constructor (props) {
     super(props)
@@ -47,7 +49,7 @@ class Content extends Component {
         {this.state.data === 0
           ? <div id='mainContainer'>
           <div className='columnDiv'>
-            <h1>Content</h1>
+            <Dash />
             </div>
           </div>
 
