@@ -71,8 +71,8 @@ class Login extends Component {
 
 
            <div>
-            <div class="bodylogin"></div>
-            <div class="headerlogin">
+            <div className="bodylogin"></div>
+            <div className="headerlogin">
               <div><span>tring</span>apps</div>
             </div>
             <br />

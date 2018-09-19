@@ -1,13 +1,15 @@
 #footer{
-    background: #f5f1ed;
+    background: #222035;
     /* background: #f5f1ed url('../../Assets/images/footer-back.jpg') no-repeat 0 0; */
     /*src={require("../../Assets/images/question1.png")}*/
     /*url('../src/Assets/images/footer-back.jpg') no-repeat 0 0;*/
+    font-family: 'Exo', sans-serif;
+    font-weight: 400;
     text-align: center;
     position: fixed;
         width: 100%;
         bottom: 0;
         height: 40px;
-        color: #39ce0d;
+        color: white;
         cursor: default;
 }

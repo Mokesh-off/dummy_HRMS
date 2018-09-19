@@ -1,17 +1,26 @@
 #header{
-    background: #f5f1ed;
+    background: #222035;
     position: fixed;
     width: 100%;
     top: 0;
     height: 50px;
+    font-family: 'Exo', sans-serif;
+    font-weight: 250;
+    
 }
 .headerText{
     margin-top: 18px;
 }
-#header > .logo{
-    color: #39ce0d;
+#header > .logo1{
+    color: orange;
     font-size: 35px;
-    padding: 30px;
+    padding-left: 30px;
+    cursor: default;
+
+}
+#header > .logo2{
+    color: white;
+    font-size: 35px;
     cursor: default;
 
 }
@@ -21,10 +30,10 @@
     flex-direction: row-reverse;
     margin-top: -23px;
     margin-right: 50px;
-    color: #39ce0d;
+    color: white;
     cursor: pointer;
 }
 
  #header .profile:hover{
-    color: white ;
+    color: orange ;
 }
