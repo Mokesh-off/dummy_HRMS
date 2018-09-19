@@ -1,0 +1,33 @@
+input[type="text"] {
+    display: flex;
+    flex-direction: row;
+    width: 400px;
+    margin-top: 30px;
+    margin-left: 25%;
+    font-size: 16px;
+    padding: 20px 20px 12px 40px;
+    border: none;
+    border-bottom: 1px solid grey;
+}
+
+#but1 {
+    margin-top: 10px;
+    width: 80px;
+    margin-left: 45%;
+    border-style: border-box;
+    border-radius: 5px;
+}
+
+#format1 {
+    margin-top: 80px;
+}
+
+thead,
+td,
+th,
+table {
+    padding-left: 10px;
+    padding-right: 10px;
+    border-collapse: collapse;
+    border: 2px solid grey;
+}
