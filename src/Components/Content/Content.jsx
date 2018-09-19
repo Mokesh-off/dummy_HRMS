@@ -74,9 +74,6 @@ class Content extends Component {
 			 :			 this.state.data == 'My_Leave' ?
        <div id='mainContainer'>
                        <div className='columnDiv'>
-                         <h1>My_Leave</h1>
-                       </div>
-                       <div>
                        <MyLeaveRecord />
                        </div>
                      </div>
